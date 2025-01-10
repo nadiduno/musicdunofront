@@ -1,50 +1,35 @@
-# React + TypeScript + Vite
+# Front-end da aplicação ScreenMatch
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma interface intuitiva para interagir com a API ScreenMatch, desenvolvida como parte do curso da Fly em parceria com a Alura.
 
-Currently, two official plugins are available:
+Este projeto representa o front-end da aplicação ScreenMatch, construído para consumir a API backend desenvolvida em Java. A interface permite aos usuários [agregar artistas e músicas.].
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Histórico de Desenvolvimento
+* **Versão inicial:** Desenvolvida em JavaScript vanilla por [Monica Hillman](https://cursos.alura.com.br/user/monicahillman)
+* **Refatoração:** Migrada para React por [Nadi Duno](https://www.linkedin.com/in/nadiduno/), visando maior reutilização de componentes e melhor experiência do usuário.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tecnologias Utilizadas
+[React](https://react.dev/) 
+[Typescript](https://www.typescriptlang.org/)
 
-- Configure the top-level `parserOptions` property like this:
+## Clonar o projeto
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+git clone https://github.com/nadiduno/musicdunofront.git
+cd musicdunofront
+npm install
+npm run dev
 ```
+## Contribuição
+Contribuições são bem-vindas! Para contribuir, siga estes passos:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- Fork este repositório
+- Crie um novo branch
+- Faça suas alterações e commit
+- Envie um pull request
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Licença
+Este projeto está licenciado sob a MIT License.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+
